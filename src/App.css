@@ -16,8 +16,14 @@ body{
   background-color: #2F4050;
 }
 
+.menu-icon{
+  color: black;
+  background-color: white;
+}
+
+
 .Dashboarddata{
-height: auto;
+height: 100%;
 padding:0;
 width: 100%;
 
