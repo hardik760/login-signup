@@ -6,11 +6,58 @@ import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const [open, setOpen] = useState(false);
+  const [searchQuery,setsearchQuery]=useState("");
+
   const navigate = useNavigate();
+
+  const handleSearch=(e) =>{
+
+
+  }
 
   return (
     <div className="Dashboard">
 
+<div className="searchbar">
+
+
+<form onSubmit={handleSearch} className="search-form"> 
+    <input   
+     type="text"
+    placeholder="Chooose start location"
+    className=" "
+    value={searchQuery}
+    onChange={(e)=>setsearchQuery(e.target.value)}
+    />
+ <button type="submit" className="search-button">Search</button>
+
+</form>
+
+<form onSubmit={handleSearch} className="search-form"> 
+    <input   
+     type="text"
+    placeholder="Choose destination"
+    className=" "
+    value={searchQuery}
+    onChange={(e)=>setsearchQuery(e.target.value)}
+    />
+ <button type="submit" className="search-button">Search</button>
+
+</form>
+
+<form onSubmit={handleSearch} className="search-form"> 
+    <input   
+     type="text"
+    placeholder="Search for vehicles"
+    className=" "
+    value={searchQuery}
+    onChange={(e)=>setsearchQuery(e.target.value)}
+    />
+ <button type="submit" className="search-button">Search</button>
+
+</form>
+
+</div>
 
       <div className="menu-icon" onClick={() => setOpen(!open)}>
         <MenuOutlinedIcon  />
