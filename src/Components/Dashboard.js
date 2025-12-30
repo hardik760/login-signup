@@ -53,6 +53,9 @@ const [vehicleQuery, setVehicleQuery] = useState("");
       value={startLocation}
       onChange={(e) => setStartLocation(e.target.value)}
     />
+       <button type="submit" className="search-button">
+      Search
+    </button>
   </form>
 
   <form onSubmit={handleSearch} className="search-form">
@@ -62,6 +65,9 @@ const [vehicleQuery, setVehicleQuery] = useState("");
       value={destination}
       onChange={(e) => setDestination(e.target.value)}
     />
+       <button type="submit" className="search-button">
+      Search
+    </button>
   </form>
 
   <form onSubmit={handleSearch} className="search-form">
@@ -71,6 +77,9 @@ const [vehicleQuery, setVehicleQuery] = useState("");
       value={vehicleQuery}
       onChange={(e) => setVehicleQuery(e.target.value)}
     />
+       <button type="submit" className="search-button">
+      Search
+    </button>
   </form>
 </div>
 
