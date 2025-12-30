@@ -3,6 +3,8 @@ import './App.css';
 import Loginsignup from './Components/Loginsignup';
 import Dashboard from "./Components/Dashboard";
 
+import Profile from "./Components/Profile";
+
 import { Routes, Route } from "react-router-dom";
 
 
@@ -11,10 +13,12 @@ function App() {
     <Routes>
     <Route path="/" element={<Loginsignup />} />
     <Route path="/dashboard" element={<Dashboard />} />
-
+    <Route path="/profile" element={<Profile />} />
   </Routes>
 
   );
 }
 
 export default App;
+
+
