@@ -46,6 +46,7 @@ function Dashboard() {
 
 
       <div className="searchbar-container">
+        
         <form className="search-form" onSubmit={handleSearch}>
           <input
             placeholder="Choose start location"

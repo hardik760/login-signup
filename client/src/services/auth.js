@@ -1,6 +1,6 @@
-const API_URL = "http://localhost:5002/api/auth";
+const API_URL = "http://localhost:5001/api/auth";
 
-// LOGIN API
+
 export const loginApi = async (email, password) => {
   const res = await fetch(`${API_URL}/login`, {
     method: "POST",
@@ -16,10 +16,10 @@ export const loginApi = async (email, password) => {
     throw new Error(data.message || "Login failed");
   }
 
-  return data; // { token, user }
+  return data; 
 };
 
-// REGISTER API
+
 export const registerApi = async (name, email, password) => {
   const res = await fetch(`${API_URL}/register`, {
     method: "POST",
@@ -35,5 +35,5 @@ export const registerApi = async (name, email, password) => {
     throw new Error(data.message || "Registration failed");
   }
 
-  return data; // { token, user }
+  return data;
 };
